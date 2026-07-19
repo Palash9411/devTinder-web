@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const Footer = () => {
   return (
     <footer className="footer sm:footer-horizontal bg-base-300 p-10 fixed bottom-0 left-0 right-0">
