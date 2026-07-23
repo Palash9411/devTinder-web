@@ -21,6 +21,9 @@ const NavBar = () => {
       console.error("Error logging out:", error);
     }
   };
+  const navigateToProfile = () =>{
+    return navigate('/profile');
+  }
   return (
     <div className="navbar bg-base-300 shadow-sm">
       <div className="flex-1">
@@ -52,7 +55,7 @@ const NavBar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <Link to="/profile">Profile</Link>
+                <Link onClick={navigateToProfile} to="/profile">Profile</Link>
               </li>
               <li>
                 <Link to="/settings">Settings</Link>
